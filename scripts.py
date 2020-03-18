@@ -22,5 +22,19 @@ driver.find_element_by_id("loginbutton").click()
 
 #Logout
 driver.find_element_by_id("userNavigationLabel").click()
-time.sleep(5)
+driver.implicitly_wait(5)
+# time.sleep(5)
 driver.find_element_by_xpath("//ul[@class='_54nf']/li[position()=last()]").click()
+
+#Google
+driver.get("https://www.google.com")
+driver.refresh()
+driver.back()
+driver.forward()
+
+driver.execute_script("window.open('https://nirajkhatiwada.netlify.com', 'new window')")
+
+driver.switch_to_window(driver.window_handles[0])
+time.sleep(5)
+driver.switch_to_window(driver.window_handles[1])
+
