@@ -13,9 +13,9 @@ driver = webdriver.Firefox(executable_path= path,options= firefox_option )
 
 driver.get("https://www.facebook.com")
 
-driver.find_element_by_id("email").send_keys("heavenandhell368@gmail.com")
+driver.find_element_by_id("email").send_keys("************@gmail.com")
 
-driver.find_element_by_id("pass").send_keys("_sn0r13xfk")
+driver.find_element_by_id("pass").send_keys("**************")
 
 driver.find_element_by_id("loginbutton").click()
 
